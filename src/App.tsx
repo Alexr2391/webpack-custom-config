@@ -1,14 +1,14 @@
-import { FC } from 'react'
-import './styles/styles.scss'
+import React from 'react';
 
-const App: FC = () => {
+
+
+const App: React.FC = () => {
+
     return (
-        <main>
-            <h1>{process.env.ASSET_HELLO}</h1>
-            <p>welcome to the Webpack set up</p>
-            <img src="assets/images/niagara.jpg" alt="niagara" />
-        </main>
-    )
-}
+        <div>
+            <div>Welcome to webpack</div>
+        </div>
+    );
+};
 
-export default App
+export default App;

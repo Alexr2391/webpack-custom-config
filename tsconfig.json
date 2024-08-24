@@ -12,14 +12,21 @@
         "allowSyntheticDefaultImports": true,
         "strict": true,
         "forceConsistentCasingInFileNames": true,
-        "module": "commonjs",
+        "module": "esnext",
         "jsx": "react-jsx",
         "jsxImportSource": "react",
         "outDir": "./dist",
         "moduleResolution": "node",
         "resolveJsonModule": true,
-        "isolatedModules": true,
+        "isolatedModules": false,
         "noEmit": false,
+        "baseUrl": "./src",
+        "declaration": true,
+        "paths": {
+            "*": [
+                "types/*"
+            ]
+        }
     },
     "include": [
         "src/**/*.ts",
@@ -27,5 +34,5 @@
     ],
     "exclude": [
         "node_modules"
-    ],
+    ]
 }
