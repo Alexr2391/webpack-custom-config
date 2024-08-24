@@ -39,11 +39,12 @@ module.exports = merge(common, {
         new CopyWebpackPlugin({
             patterns: [
                 {
-                    from: path.resolve(__dirname, 'public/assets/images'),
-                    to: 'assets/images',
+                    from: 'public/assets/images', 
+                    to: 'assets/images',          
+                    noErrorOnMissing: true        
                 },
             ],
-        })
+        }),
     ],
     optimization: {
         minimizer: [
