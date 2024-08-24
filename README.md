@@ -11,10 +11,10 @@ You can add add additional variables that will be passed in your react project a
 # 2. Install the node modules 
 run `npm install` 
 
-#2. Starting the dev mode
+# 3. Starting the dev mode
 run `npm start`
 
-#3. Build the project 
+# 4. Build the project 
 run `npm run build` 
 
 The project has some basic linting scripts and a few additional options to run an http-server to run the final build
