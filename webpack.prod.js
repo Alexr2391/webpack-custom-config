@@ -3,8 +3,6 @@ const common = require('./webpack.common.js');
 const TerserPlugin = require('terser-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const path = require('path');
-console.log('hi from prod')
 
 module.exports = merge(common, {
     mode: 'production',
@@ -39,9 +37,9 @@ module.exports = merge(common, {
         new CopyWebpackPlugin({
             patterns: [
                 {
-                    from: 'public/assets/images', 
-                    to: 'assets/images',          
-                    noErrorOnMissing: true        
+                    from: 'public/assets/images',
+                    to: 'assets/images',
+                    noErrorOnMissing: true
                 },
             ],
         }),

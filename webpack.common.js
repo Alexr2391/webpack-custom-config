@@ -17,6 +17,10 @@ module.exports = {
         modules: [path.resolve(__dirname, 'src'), 'node_modules'],
         alias: {
             '@assets': path.resolve(__dirname, 'public/assets'),
+            '@components': path.resolve(__dirname, 'src/components'),
+            '@common': path.resolve(__dirname, 'src/common'),
+            '@utils': path.resolve(__dirname, 'src/utils'),
+            '@constants': path.resolve(__dirname, 'src/constants'),
         },
         fallback: {
             "timers": require.resolve("timers-browserify"),
