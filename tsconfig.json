@@ -25,6 +25,21 @@
         "paths": {
             "*": [
                 "types/*"
+            ],
+            "@components/*": [
+                "components/*"
+            ],
+            "@assets/*": [
+                "assets/*"
+            ],
+            "@common/*": [
+                "common/*"
+            ],
+            "@utils/*": [
+                "utils/*"
+            ],
+            "@constants/*": [
+                "constants/*"
             ]
         }
     },
